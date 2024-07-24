@@ -1,16 +1,24 @@
-<script>
-  import { fly } from 'svelte/transition';
+<!-- src/routes/+page.svelte -->
+<script lang="ts">
+  import { fly, fade } from 'svelte/transition';
 </script>
 
 <svelte:head>
-  <title>Your Name - Portfolio</title>
+  <title>Maksim Postnikov | Product Designer & Developer</title>
 </svelte:head>
 
-<div class="text-center">
-  <h1 class="text-4xl font-bold mb-4 text-gray-800 dark:text-gray-200" in:fly="{{ y: 20, duration: 500 }}">Welcome to My Portfolio</h1>
-  <p class="text-xl mb-8 text-gray-600 dark:text-gray-400" in:fly="{{ y: 20, duration: 500, delay: 200 }}">I'm a passionate developer specializing in web technologies.</p>
-  <div class="flex justify-center space-x-4" in:fly="{{ y: 20, duration: 500, delay: 400 }}">
-    <a href="/resume" class="bg-primary-500 hover:bg-primary-600 text-white font-bold py-2 px-4 rounded transition duration-300">View Resume</a>
-    <a href="/projects" class="bg-primary-500 hover:bg-primary-600 text-white font-bold py-2 px-4 rounded transition duration-300">See Projects</a>
-  </div>
+<div class="min-h-screen bg-white">
+  <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <h1 class="text-5xl md:text-7xl font-unbounded font-bold mb-6" in:fly="{{ y: -20, duration: 1000 }}">
+        <span class="text-blue-600">Quality</span> design & web development synergy
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl" in:fade="{{ duration: 1000, delay: 500 }}">
+        I create intuitive design for websites and apps, helping businesses enhance user experience, boost key metrics and achieve digital leadership
+      </p>
+      <a href="/contact" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors">
+        Request a project
+      </a>
+    </div>
+  </section>
 </div>

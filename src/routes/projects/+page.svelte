@@ -1,44 +1,34 @@
-<script>
-  import { fly } from 'svelte/transition';
-
+<!-- src/routes/projects/+page.svelte -->
+<script lang="ts">
   const projects = [
     {
-      title: "Project 1",
-      description: "A brief description of project 1.",
-      image: "https://via.placeholder.com/300x200",
-      link: "#"
+      title: "Navicon",
+      type: "Corporate website",
+      description: "Redesign and development of a new corporate website that increased conversion rate by 2x",
+      image: "/images/navicon-preview.jpg"
     },
-    {
-      title: "Project 2",
-      description: "A brief description of project 2.",
-      image: "https://via.placeholder.com/300x200",
-      link: "#"
-    },
-    {
-      title: "Project 3",
-      description: "A brief description of project 3.",
-      image: "https://via.placeholder.com/300x200",
-      link: "#"
-    }
+    // Add more projects here
   ];
 </script>
 
 <svelte:head>
-  <title>Your Name - Projects</title>
+  <title>Projects | Maksim Postnikov</title>
 </svelte:head>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  {#each projects as project, index}
-    <div 
-      class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-colors duration-200 transform hover:scale-105 transition-transform duration-200"
-      in:fly="{{ y: 20, duration: 500, delay: index * 200 }}"
-    >
-      <img src={project.image} alt={project.title} class="w-full h-48 object-cover" />
-      <div class="p-4">
-        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">{project.title}</h3>
-        <p class="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
-        <a href={project.link} target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 transition duration-300">View Project</a>
-      </div>
+<div class="min-h-screen bg-white py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-unbounded font-bold mb-12">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {#each projects as project}
+        <div class="bg-gray-100 rounded-lg overflow-hidden">
+          <img src={project.image} alt={project.title} class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">{project.title}</h3>
+            <p class="text-gray-600 mb-4">{project.type}</p>
+            <p>{project.description}</p>
+          </div>
+        </div>
+      {/each}
     </div>
-  {/each}
+  </div>
 </div>
