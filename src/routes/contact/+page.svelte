@@ -7,7 +7,7 @@
   let message = '';
 
   const handleSubmit = () => {
-    // Implement form submission logic here
+  
     console.log('Form submitted:', { name, email, message });
   };
 </script>

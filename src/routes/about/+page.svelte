@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>About Me | Your Name</title>
+  <title>About Me |Kasyap Dharanikota</title>
 </svelte:head>
 
 <div class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-20 px-4 sm:px-6 lg:px-8">
@@ -14,17 +14,17 @@
     </h1>
     <div class="bg-white rounded-xl shadow-lg p-8" in:fade="{{ duration: 500, delay: 200 }}">
       <p class="text-xl text-gray-800 mb-6">
-        I'm a product designer and developer with over 10 years of experience in creating intuitive interfaces and websites that drive business success.
-      </p>
+        I am a full stack software engineer with diverse skill sets ,specializing in backend-development, AI and Devops . 
+       
       <p class="text-xl text-gray-800 mb-6">
-        My approach combines user-centered design principles with cutting-edge development techniques to deliver exceptional digital experiences.
+       I  have a passion for creating intuitive and user-friendly interfaces that drive business growth.
       </p>
       <h2 class="text-3xl font-bold text-indigo-900 mb-4">Skills</h2>
       <ul class="list-disc list-inside text-gray-800 mb-6">
-        <li>UX/UI Design</li>
+        <li> Devops </li>
         <li>Front-end Development</li>
-        <li>Product Strategy</li>
-        <li>Agile Methodologies</li>
+        <li>Backend Development </li>
+        <li>GenAI LLM</li>
       </ul>
     </div>
   </div>

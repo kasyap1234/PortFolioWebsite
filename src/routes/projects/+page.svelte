@@ -7,6 +7,7 @@
       description: "Redesign and development of a new corporate website that increased conversion rate by 2x",
       image: "/images/navicon-preview.jpg"
     },
+    
     // Add more projects here
   ];
 </script>
