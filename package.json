@@ -30,6 +30,9 @@
 	"type": "module",
 	"dependencies": {
 		"@tailwindcss/forms": "^0.5.7",
-		"particles.js": "^2.0.0"
+		"animejs": "^3.2.2",
+		"particles.js": "^2.0.0",
+		"three": "^0.166.1",
+		"vanta": "^0.5.24"
 	}
 }
