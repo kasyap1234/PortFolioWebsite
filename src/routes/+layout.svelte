@@ -5,16 +5,16 @@
 	import { cubicOut } from 'svelte/easing';
 
 	let particles = [];
-	const particleCount = 50;
+	const particleCount = 30; // Reduced particle count
 
 	onMount(() => {
 		for (let i = 0; i < particleCount; i++) {
 			particles.push({
 				x: Math.random() * 100,
 				y: Math.random() * 100,
-				size: Math.random() * 5 + 2,
-				color: `hsl(${Math.random() * 360}, 70%, 70%)`,
-				speed: Math.random() * 0.5 + 0.1
+				size: Math.random() * 2 + 1, // Smaller particles
+				color: `hsla(${Math.random() * 360}, 70%, 70%, 0.3)`, // More transparent
+				speed: Math.random() * 0.2 + 0.05 // Slower movement
 			});
 		}
 

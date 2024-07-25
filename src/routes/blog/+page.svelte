@@ -16,7 +16,7 @@
       <p class="text-xl text-gray-800 mb-6">
         I share my thoughts and insights on software engineering , development, and industry trends on my Substack newsletter.
       </p>
-      <a href="https://yoursubstack.substack.com" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors inline-block">
+      <a href="https://bytesofbrilliance.substack.com/" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors inline-block">
         Read my blog on Substack
       </a>
     </div>

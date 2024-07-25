@@ -17,7 +17,7 @@
         I am a full stack software engineer with diverse skill sets ,specializing in backend-development, AI and Devops . 
        
       <p class="text-xl text-gray-800 mb-6">
-       I  have a passion for creating intuitive and user-friendly interfaces that drive business growth.
+      I have a passion for building efficient and optimal solutions. 
       </p>
       <h2 class="text-3xl font-bold text-indigo-900 mb-4">Skills</h2>
       <ul class="list-disc list-inside text-gray-800 mb-6">
