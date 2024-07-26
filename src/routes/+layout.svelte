@@ -44,9 +44,11 @@
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
 			<a href="/" class="text-2xl font-unbounded font-bold">Kasyap Dharanikota</a>
 			<nav class="hidden md:flex space-x-8">
+
 				<a href="/projects" class="hover:text-blue-600 transition-colors">Projects</a>
 				<a href="/resume" class="hover:text-blue-600 transition-colors">Resume</a>
 				<a href="/about" class="hover:text-blue-600 transition-colors">About me</a>
+				<a href="/experience" class="hover:text-blue-600 transition-colors">Experience</a>
 				<a href="/contact" class="hover:text-blue-600 transition-colors">Contact</a>
 				<a href="/blog" class="hover:text-blue-600 transition-colors">Blog</a>
 			</nav>

@@ -1,10 +1,18 @@
 <!-- src/routes/projects/+page.svelte -->
 <script lang="ts">
+	
+	import {scale} from "svelte/transition";
+	import {cubicOut} from "svelte/easing";
+	
+
+
   const images=[
     'Terminal.jpg',
 	'bandwidth.png',
 	'Eduhub.png',
-	'ToolSmith.png'
+	'ToolSmith.png',
+	'swin.png',
+	'q.png'
 	
   ]
   const imagePaths= images.map((image)=> `/assets/${image}`)
@@ -40,7 +48,23 @@
 
 		  image: imagePaths[3]
 
-		}
+		},
+
+	{
+		title: 'Image Dehazer',
+		type: 'ML Model', 
+		description : 'A ML model that dehazes images using visual transformer (swin transformer) ',
+		image: imagePaths[4]
+
+
+	}
+	,
+	{
+		title: 'QuPoll',
+		type: 'Web App',
+		description: 'A web app that allows you to create polls and quizzes  and share them with your friends',
+		image: imagePaths[5]
+	}
 
 		// Add more projects here
 	];
@@ -55,7 +79,7 @@
 		<h2 class="text-4xl font-unbounded font-bold mb-12">Projects</h2>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 			{#each projects as project}
-				<div class="bg-gray-100 rounded-lg overflow-hidden">
+				<div class="bg-gray-100 rounded-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-110" >
 					<img src={project.image} alt={project.title} class="w-full h-48 object-cover" />
 					<div class="p-6">
 						<h3 class="text-2xl font-bold mb-2">{project.title}</h3>
