@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { appBarClasses } from '@mui/material';
-  import { onMount } from 'svelte';
+
+  
   import { fade, fly } from 'svelte/transition';
  
    const experiences = [
