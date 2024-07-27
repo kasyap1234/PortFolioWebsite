@@ -39,7 +39,7 @@
 
 <div class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 ">
-  <h1 class="text-5xl font-bold text-blue-700 mb-12"in:fly="{{ duration: 1000 }}"> Part time and Freelance work  </h1>
+  <h1 class="text-5xl font-bold text-blue-700 mb-12" in:fly="{{ duration: 1000 }}"> Part time and Freelance work  </h1>
   </div> 
 
 

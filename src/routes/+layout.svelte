@@ -1,9 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import { onMount } from 'svelte';
-	import { tweened } from 'svelte/motion';
-	import { cubicOut } from 'svelte/easing';
-
+	
 	let particles = [];
 	const particleCount = 30; // Reduced particle count
 
