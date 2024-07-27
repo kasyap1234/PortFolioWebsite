@@ -3,7 +3,7 @@
 	
 	import {scale} from "svelte/transition";
 	import {cubicOut} from "svelte/easing";
-	  import Accordion, { Panel, Header, Content } from '@smui-extra/accordion'; 
+	
 
 
   const images=[
