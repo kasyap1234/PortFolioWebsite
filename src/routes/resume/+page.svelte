@@ -1,39 +1,22 @@
-<script>
-	import { fly } from 'svelte/transition';
+<!-- <script lang="ts">
+import { PdfViewer } from "svelte-pdf-simple";
+const pathToPdf = "/assets/resume.pdf";
+const pdfProps = {
+    path: pathToPdf,
+    scale: 1.0,
+    rotate: 0,
+   
+    page: 1,
+    zoom: 1,
+    
+
+  
+}
+
 </script>
 
-<svelte:head>
-	<title>Kasyap Dharanikota - Resume</title>
-</svelte:head>
+<PdfViewer props={pdfProps} />
 
-<div
-	class="bg-white dark:bg-gray-800 shadow overflow-hidden sm:rounded-lg transition-colors duration-200"
-	in:fly={{ y: 20, duration: 500 }}
->
-	<div class="px-4 py-5 sm:px-6">
-		<h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">Resume</h3>
-	</div>
-	<div class="border-t border-gray-200 dark:border-gray-700">
-		<dl>
-			<div class="bg-gray-50 dark:bg-gray-900 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-sm font-medium text-gray-500 dark:text-gray-400">Full name</dt>
-				<dd class="mt-1 text-sm text-gray-900 dark:text-gray-100 sm:mt-0 sm:col-span-2">
-					Kasyap Dharanikota
-				</dd>
-			</div>
-			<div class="bg-white dark:bg-gray-800 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-sm font-medium text-gray-500 dark:text-gray-400">Education</dt>
-				<dd class="mt-1 text-sm text-gray-900 dark:text-gray-100 sm:mt-0 sm:col-span-2">
-					Bachelor's in Artificial Intelligence , Mahindra University , 2020-2024
-				</dd>
-			</div>
-			<div class="bg-gray-50 dark:bg-gray-900 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-sm font-medium text-gray-500 dark:text-gray-400">Skills</dt>
-				<dd class="mt-1 text-sm text-gray-900 dark:text-gray-100 sm:mt-0 sm:col-span-2">
-					JavaScript, TypeScript, React, Svelte, Node.js,Nestjs,Python,Golang, AWS, Docker,
-					Git,Linux
-				</dd>
-			</div>
-		</dl>
-	</div>
-</div>
+
+ -->
+<iframe src="https://drive.google.com/file/d/1UC5ZBQECNZ_ZZ29WkrEwqB5voemfJfVc/preview" title="Resume" class="min-h-screen w-full p-4 "></iframe>	

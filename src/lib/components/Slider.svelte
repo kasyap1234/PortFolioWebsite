@@ -7,6 +7,8 @@
     'NestJS.png',
     'nodejs.png',
     'svelte.png',
+    'mongodb.png',
+    'postgresql.png',
   ];
   const imagePaths = images.map((image) => `/images/${image}`);
 </script>
@@ -29,6 +31,6 @@
     }
   }
   .animate-slide {
-    animation: slide 30s linear infinite;
+    animation: slide 10s linear infinite;
   }
 </style>

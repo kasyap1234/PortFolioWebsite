@@ -3,7 +3,7 @@
 	
 	import {scale} from "svelte/transition";
 	import {cubicOut} from "svelte/easing";
-	
+	  import Accordion, { Panel, Header, Content } from '@smui-extra/accordion'; 
 
 
   const images=[
@@ -86,8 +86,14 @@
 						<p class="text-gray-600 mb-4">{project.type}</p>
 						<p>{project.description}</p>
 					</div>
+
 				</div>
+
 			{/each}
+
 		</div>
-	</div>
+	
+		
 </div>
+</div>
+
